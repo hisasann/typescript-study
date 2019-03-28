@@ -22,12 +22,13 @@
     "sourceMap": false,
     "strictNullChecks": true,
     "strictPropertyInitialization": false,
+    "strictFunctionTypes": false,
     "target": "es5",
     "types": [
       "@types/node",
       "@types/jest"
     ]
   },
-  "include": ["src/**/*.ts", "types/**/*.d.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
