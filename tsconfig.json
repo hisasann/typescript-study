@@ -19,7 +19,7 @@
       "*": ["types/*"]
     },
     "rootDir": "./src",
-    "sourceMap": true,
+    "sourceMap": false,
     "strictNullChecks": true,
     "strictPropertyInitialization": false,
     "target": "es5",
