@@ -2,17 +2,23 @@
  * TaggedUnion
  */
 
+type A = number
+type B = string
+
 interface TypeA {
   kind: 'type-a'
-  typeAValue: number
+  typeAValue: A
 }
 
 interface TypeB {
   kind: 'type-b'
-  typeBValue: string
+  typeBValue: B
 }
 
-function processAB(value: TypeA | TypeB) {
+type AValue = TypeA['typeAValue']
+type BValue = TypeB['typeBValue']
+
+function processAB(value: TypeA | TypeB): AValue | BValue {
   switch (value.kind) {
     case 'type-a':
       return value.typeAValue
@@ -40,6 +46,5 @@ processAB({
 //   kind: 'hoge',
 //   typeCValue: false
 // })
-
 
 export {}

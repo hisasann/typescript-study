@@ -7,8 +7,8 @@ function isString(x: any): x is string {
   return typeof x === 'string'
 }
 
-console.log(isString('a'))     // true
-console.log(isString(1))       // false
-console.log(isString(false))  // false
+console.log(isString('a')) // true
+console.log(isString(1)) // false
+console.log(isString(false)) // false
 
 export {}
