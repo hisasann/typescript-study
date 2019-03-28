@@ -1,1 +1,1 @@
-var a = undefined;
+var a = undefined

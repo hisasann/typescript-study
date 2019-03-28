@@ -2,6 +2,6 @@
  * ジェネリックス
  */
 var obj = {
-    foo: 3,
-    bar: 'hi'
-};
+  foo: 3,
+  bar: 'hi'
+}
