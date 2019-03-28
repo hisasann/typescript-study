@@ -6,9 +6,9 @@
 function func(value: string | null): number {
   if (value != null) {
     // value は null ではないので string 型に絞り込まれる
-    return value.length;
+    return value.length
   } else {
-    return 0;
+    return 0
   }
 }
 

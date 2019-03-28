@@ -3,22 +3,22 @@
  */
 
 interface Hoge {
-  foo: string;
-  bar: number;
+  foo: string
+  bar: number
 }
 interface Piyo {
-  foo: number;
-  baz: boolean;
+  foo: number
+  baz: boolean
 }
 
 function useHogePiyo(obj: Hoge | Piyo): void {
   // ここではobjはHoge | Piyo型
   if ('bar' in obj) {
     // barプロパティがあるのはHoge型なのでここではobjはHoge型
-    console.log('Hoge', obj.bar);
+    console.log('Hoge', obj.bar)
   } else {
     // barプロパティがないのでここではobjはPiyo型
-    console.log('Piyo', obj.baz);
+    console.log('Piyo', obj.baz)
   }
 }
 
