@@ -1,2 +1,2 @@
-var value = 'foo'
-var str = value
+var value = 'foo';
+var str = value;
