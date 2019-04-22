@@ -6,8 +6,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist/* && tsc",
     "watch": "cross-env NODE_ENV=development rimraf dist/* && tsc -w",
-    "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
-    "lintfix": "eslint --fix --ext .js,.ts --ignore-path .gitignore .",
+    "lint": "eslint --ext .ts --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .ts --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "test": "jest"
   },
