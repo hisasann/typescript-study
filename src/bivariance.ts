@@ -16,19 +16,16 @@ function listenEvent(handler: (n: Event) => void): void {}
 listenEvent((e: MouseEvent): void => console.log(e.x + ',' + e.y))
 
 // Undesirable alternatives in presence of soundness
-listenEvent(
-  (e: Event): void =>
-    console.log((e as MouseEvent).x + ',' + (e as MouseEvent).y)
+listenEvent((e: Event): void =>
+  console.log((e as MouseEvent).x + ',' + (e as MouseEvent).y)
 )
 
-listenEvent(
-  (e: Event): void => {
-    // MouseEvent がきたときは keyCode が undefined
-    console.log((e as KeyEvent).keyCode)
-    // KeyEvent がきたときは x が undefined
-    console.log((e as MouseEvent).x)
-  }
-)
+listenEvent((e: Event): void => {
+  // MouseEvent がきたときは keyCode が undefined
+  console.log((e as KeyEvent).keyCode)
+  // KeyEvent がきたときは x が undefined
+  console.log((e as MouseEvent).x)
+})
 
 // Still disallowed (clear error). Type safety enforced for wholly incompatible types
 // error TS2345: Argument of type '(e: number) => void' is not assignable to parameter of type '(n: Event) => void'.
@@ -56,10 +53,10 @@ foo.then(makeLowerCase) // this will fail if foo resolves to a number
 let items = [1, 2, 3]
 
 // Don't force these extra parameters
-items.forEach((item, index, array) => console.log(item))
+items.forEach((item, index, array): void => console.log(item))
 
 // Should be OK!
-items.forEach(item => console.log(item))
+items.forEach((item): void => console.log(item))
 
 let x = (): any => ({ name: 'Alice' })
 let y = (): any => ({ name: 'Alice', location: 'Seattle' })

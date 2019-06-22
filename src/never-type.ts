@@ -41,7 +41,7 @@ map(
     type: 'Some',
     value: 'abc'
   } as Some<string>,
-  o => {
+  (o): void => {
     console.log(o)
   }
 )
