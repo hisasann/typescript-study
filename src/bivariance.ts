@@ -50,7 +50,7 @@ foo.then(makeLowerCase) // this will fail if foo resolves to a number
 //  error TS2322: Type '(b: number, s: string) => number' is not assignable to type '(a: number) => number'.
 // x = y; // Error
 
-let items = [1, 2, 3]
+const items = [1, 2, 3]
 
 // Don't force these extra parameters
 items.forEach((item, index, array): void => console.log(item))
@@ -59,7 +59,7 @@ items.forEach((item, index, array): void => console.log(item))
 items.forEach((item): void => console.log(item))
 
 let x = (): any => ({ name: 'Alice' })
-let y = (): any => ({ name: 'Alice', location: 'Seattle' })
+const y = (): any => ({ name: 'Alice', location: 'Seattle' })
 
 x = y // OK
 // error TS2322: Type '() => { name: string; }' is not assignable to type '() => { name: string; location: string; }'.

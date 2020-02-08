@@ -33,9 +33,9 @@ function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
 function setProperty<T, K extends keyof T>(obj: T, key: K, value: T[K]): void {
   obj[key] = value
 }
-let x = { foo: 10, bar: 'hello!' }
-let foo = getProperty(x, 'foo') // number
-let bar = getProperty(x, 'bar') // string
+const x = { foo: 10, bar: 'hello!' }
+const foo = getProperty(x, 'foo') // number
+const bar = getProperty(x, 'bar') // string
 // let oops = getProperty(x, 'wargarbl'); // Error! 'wargarbl' is not 'foo' | 'bar'
 // setProperty(x, 'foo', 'string'); // Error!, string expected number
 

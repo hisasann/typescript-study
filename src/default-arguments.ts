@@ -2,7 +2,7 @@
  * デフォルト引数
  */
 
-const hoge = (a: string, b: boolean = true): void => {
+const hoge = (a: string, b = true): void => {
   console.log(a, b)
 }
 hoge('a')
