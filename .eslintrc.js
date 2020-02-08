@@ -22,12 +22,14 @@ module.exports = {
   rules: {
     'dot-notation': 'off',
     'no-console': 'off',
+    'prefer-const': 'off',
     '@typescript-eslint/no-object-literal-type-assertion': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
     'import/no-mutable-exports': 'off'
   }
 }
