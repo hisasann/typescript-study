@@ -12,7 +12,7 @@ const widening = 'LITERAL_TYPES_TEST'
 const nonwidening = 'LITERAL_TYPES_TEST' as const
 const check = {
   widening,
-  nonwidening
+  nonwidening,
 }
 check.widening = 'hoge'
 // error TS2322: Type '"foo"' is not assignable to type '"LITERAL_TYPES_TEST"'
@@ -21,7 +21,7 @@ check.widening = 'hoge'
 // obj は { foo: string; bar: number[] } 型
 const obj = {
   foo: '123',
-  bar: [1, 2, 3]
+  bar: [1, 2, 3],
 }
 
 /*
@@ -34,7 +34,7 @@ const obj = {
 */
 const obj2 = {
   foo: '123',
-  bar: [1, 2, 3]
+  bar: [1, 2, 3],
 } as const
 
 export {}

@@ -24,11 +24,11 @@ function useHogePiyo(obj: Hoge | Piyo): void {
 
 useHogePiyo({
   foo: 'a',
-  bar: 1
+  bar: 1,
 } as Hoge)
 useHogePiyo({
   foo: 1,
-  baz: false
+  baz: false,
 } as Piyo)
 
 // ただし、 Piyo 型に bar が追加された場合

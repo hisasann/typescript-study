@@ -15,11 +15,11 @@ interface MyInterface {
 }
 
 const b: MyType = {
-  a: 1
+  a: 1,
 }
 
 const c: MyInterface = {
-  a: 2
+  a: 2,
 }
 
 export {}

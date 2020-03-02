@@ -7,6 +7,6 @@ const foo = 'str'
 
 type FooType = typeof foo // FooTypeはstringになる
 
-const str: FooType = 'abcdef'
+const str: FooType = 'str'
 
 export {}

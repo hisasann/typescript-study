@@ -11,7 +11,7 @@ interface Foo<S, T> {
 
 const obj: Foo<number, string> = {
   foo: 3,
-  bar: 'hi'
+  bar: 'hi',
 }
 
 export {}

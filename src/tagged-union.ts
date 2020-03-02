@@ -31,12 +31,12 @@ function processAB(value: TypeA | TypeB): AValue | BValue {
 
 processAB({
   kind: 'type-a',
-  typeAValue: 1
+  typeAValue: 1,
 })
 
 processAB({
   kind: 'type-b',
-  typeBValue: 'a'
+  typeBValue: 'a',
 })
 
 // src/tagged-union.ts:36:3 - error TS2322: Type '"hoge"' is not assignable to type '"type-a" | "type-b"'.

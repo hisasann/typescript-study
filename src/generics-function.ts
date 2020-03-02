@@ -24,7 +24,7 @@ function fn<T extends { x: number }>(value: T): number {
 }
 fn({
   x: 0,
-  y: 1
+  y: 1,
 })
 
 export {}

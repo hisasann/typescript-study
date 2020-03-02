@@ -16,7 +16,7 @@ interface Piyo {
 const obj: Hoge & Piyo = {
   foo: 'foooooooo',
   bar: 3,
-  baz: true
+  baz: true,
 }
 
 // Hoge & PiyoというのはHogeでもありPiyoでもある型を表します

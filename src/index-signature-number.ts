@@ -10,7 +10,7 @@ interface NumStrDictionary {
 //初期化
 const dic: NumStrDictionary = {
   1: 'いち',
-  2: 'に'
+  2: 'に',
 }
 //更新
 dic[10] = 'じゅう'

@@ -24,11 +24,11 @@ function map<T, U>(obj: Option<T>, f: (obj: T) => U): Option<U> | never {
     case 'Some':
       return {
         type: 'Some',
-        value: f(obj.value)
+        value: f(obj.value),
       }
     case 'None':
       return {
-        type: 'None'
+        type: 'None',
       }
     default:
       // ここでobjはnever型になっている
@@ -39,7 +39,7 @@ function map<T, U>(obj: Option<T>, f: (obj: T) => U): Option<U> | never {
 map(
   {
     type: 'Some',
-    value: 'abc'
+    value: 'abc',
   } as Some<string>,
   (o): void => {
     console.log(o)

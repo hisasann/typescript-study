@@ -6,7 +6,7 @@ const obj = {
   n: n as number,
   check: (a): void => {
     console.log(a)
-  }
+  },
 }
 
 let hoge = 1

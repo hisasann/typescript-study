@@ -8,7 +8,7 @@ function pick<T, K extends keyof T>(obj: T, key: K): T[K] {
 
 const obj = {
   foo: 'string',
-  bar: 123
+  bar: 123,
 }
 
 const str: string = pick(obj, 'foo')
