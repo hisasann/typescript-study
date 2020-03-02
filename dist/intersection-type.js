@@ -6,5 +6,5 @@
 var obj = {
     foo: 'foooooooo',
     bar: 3,
-    baz: true
+    baz: true,
 };

@@ -14,9 +14,9 @@ function useHogePiyo(obj) {
 }
 useHogePiyo({
     foo: 'a',
-    bar: 1
+    bar: 1,
 });
 useHogePiyo({
     foo: 1,
-    baz: false
+    baz: false,
 });

@@ -7,11 +7,11 @@ function map(obj, f) {
         case 'Some':
             return {
                 type: 'Some',
-                value: f(obj.value)
+                value: f(obj.value),
             };
         case 'None':
             return {
-                type: 'None'
+                type: 'None',
             };
         default:
             // ここでobjはnever型になっている
@@ -20,7 +20,7 @@ function map(obj, f) {
 }
 map({
     type: 'Some',
-    value: 'abc'
+    value: 'abc',
 }, function (o) {
     console.log(o);
 });

@@ -13,9 +13,9 @@ function processAB(value) {
 }
 processAB({
     kind: 'type-a',
-    typeAValue: 1
+    typeAValue: 1,
 });
 processAB({
     kind: 'type-b',
-    typeBValue: 'a'
+    typeBValue: 'a',
 });

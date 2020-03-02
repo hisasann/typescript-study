@@ -5,7 +5,7 @@ var obj = {
     n: n,
     check: function (a) {
         console.log(a);
-    }
+    },
 };
 var hoge = 1;
 hoge = 2;

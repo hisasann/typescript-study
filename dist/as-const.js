@@ -10,7 +10,7 @@ var widening = 'LITERAL_TYPES_TEST';
 var nonwidening = 'LITERAL_TYPES_TEST';
 var check = {
     widening: widening,
-    nonwidening: nonwidening
+    nonwidening: nonwidening,
 };
 check.widening = 'hoge';
 // error TS2322: Type '"foo"' is not assignable to type '"LITERAL_TYPES_TEST"'
@@ -18,7 +18,7 @@ check.widening = 'hoge';
 // obj は { foo: string; bar: number[] } 型
 var obj = {
     foo: '123',
-    bar: [1, 2, 3]
+    bar: [1, 2, 3],
 };
 /*
  obj2 は
@@ -30,5 +30,5 @@ var obj = {
 */
 var obj2 = {
     foo: '123',
-    bar: [1, 2, 3]
+    bar: [1, 2, 3],
 };

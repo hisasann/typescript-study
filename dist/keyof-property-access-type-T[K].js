@@ -7,7 +7,7 @@ function pick(obj, key) {
 }
 var obj = {
     foo: 'string',
-    bar: 123
+    bar: 123,
 };
 var str = pick(obj, 'foo');
 var num = pick(obj, 'bar');
