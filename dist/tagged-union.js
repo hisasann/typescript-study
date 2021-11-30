@@ -19,3 +19,4 @@ processAB({
     kind: 'type-b',
     typeBValue: 'a',
 });
+export {};

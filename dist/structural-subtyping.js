@@ -36,6 +36,7 @@ callBow(new Dandy());
 var point = {
     x: 0,
     y: 0,
-    z: 1,
+    z: 1, // z は interface に定義されていないが x と y が含まれているので Point2D とみなせる
 };
 acceptPoint2D(point);
+export {};

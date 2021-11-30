@@ -8,3 +8,4 @@ var b = {
 var c = {
     a: 2,
 };
+export {};

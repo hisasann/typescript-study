@@ -32,3 +32,4 @@ var obj2 = {
     foo: '123',
     bar: [1, 2, 3],
 };
+export {};

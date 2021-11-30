@@ -12,3 +12,4 @@ dic[10] = 'じゅう';
 console.log(dic[1]); //いち
 console.log(dic[10]); //じゅう
 console.log(dic[3]); //undefined
+export {};

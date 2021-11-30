@@ -20,3 +20,4 @@ useHogePiyo({
     foo: 1,
     baz: false,
 });
+export {};

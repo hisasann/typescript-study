@@ -10,3 +10,4 @@ var obj = {
 var hoge = 1;
 hoge = 2;
 console.log(hoge);
+export {};

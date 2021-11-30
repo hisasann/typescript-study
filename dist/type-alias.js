@@ -20,3 +20,4 @@ var map = new Map();
 function fetch(callback) {
     callback(map);
 }
+export {};

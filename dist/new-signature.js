@@ -10,3 +10,4 @@ var Foo = /** @class */ (function () {
 var F = Foo;
 var f = new F('a');
 f.bar;
+export {};

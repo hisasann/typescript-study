@@ -7,3 +7,4 @@ dic.hoge = 'ほげ';
 dic['huga'] = 'ふが';
 console.log(dic['hoge']); //ほげ
 console.log(dic.huga); //ふが
+export {};

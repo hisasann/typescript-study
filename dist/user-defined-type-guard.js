@@ -8,3 +8,4 @@ function isString(x) {
 console.log(isString('a')); // true
 console.log(isString(1)); // false
 console.log(isString(false)); // false
+export {};

@@ -13,3 +13,4 @@ function func(value) {
 }
 func('a');
 func(null);
+export {};

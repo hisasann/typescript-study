@@ -7,3 +7,4 @@
 var x;
 // 初期化
 x = ['hello', 10]; // OK
+export {};

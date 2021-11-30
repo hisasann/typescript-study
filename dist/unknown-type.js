@@ -13,3 +13,4 @@ if (typeof u === 'number') {
     // この中ではuはnumber型
     var foo_1 = u + 5;
 }
+export {};

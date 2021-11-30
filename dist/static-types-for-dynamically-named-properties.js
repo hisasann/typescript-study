@@ -10,3 +10,4 @@ function setProperty(obj, key, value) {
 var x = { foo: 10, bar: 'hello!' };
 var foo = getProperty(x, 'foo'); // number
 var bar = getProperty(x, 'bar'); // string
+export {};

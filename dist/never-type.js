@@ -30,3 +30,4 @@ function func() {
     throw new Error('Hi');
 }
 var result = func();
+export {};

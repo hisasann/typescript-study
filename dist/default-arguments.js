@@ -7,3 +7,4 @@ var hoge = function (a, b) {
 };
 hoge('a');
 hoge('b', false);
+export {};

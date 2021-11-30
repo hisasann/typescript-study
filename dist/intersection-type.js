@@ -8,3 +8,4 @@ var obj = {
     bar: 3,
     baz: true,
 };
+export {};

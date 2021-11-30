@@ -7,3 +7,4 @@ var a = [
         aaa: 1,
     },
 ];
+export {};

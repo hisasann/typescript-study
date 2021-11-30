@@ -23,3 +23,4 @@ var v2 = func2('foo', 'bar', 1, 2, 3, 4);
 var func4 = function (str, num, b) { return str + num; };
 var args4 = ['foo', 3, false];
 func4.apply(void 0, args4);
+export {};

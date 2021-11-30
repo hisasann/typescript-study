@@ -6,7 +6,7 @@
 function save(user) { }
 function assertValidEmail(input) {
     if (!input.includes('@')) {
-        throw new Error("The string: " + input + " is not a valid email address");
+        throw new Error("The string: ".concat(input, " is not a valid email address"));
     }
 }
 var email = 'foo@example.org';
@@ -17,3 +17,4 @@ var user = {
     email: email,
 };
 save(user);
+export {};

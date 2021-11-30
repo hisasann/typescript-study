@@ -11,3 +11,4 @@ var obj = {
 };
 var str = pick(obj, 'foo');
 var num = pick(obj, 'bar');
+export {};
