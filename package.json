@@ -7,10 +7,11 @@
     "type-check": "tsc -p tsconfig.json --noEmit",
     "build": "cross-env NODE_ENV=production rimraf dist/* && tsc",
     "watch": "cross-env NODE_ENV=development rimraf dist/* && tsc -w",
-    "lint": "eslint --ext .ts --ignore-path .gitignore .",
-    "lintfix": "eslint --fix --ext .ts --ignore-path .gitignore .",
-    "precommit": "npm run lint",
     "test": "jest",
+    "lint": "eslint --ext .ts --ignore-path .eslintignore .",
+    "lintfix": "eslint --fix --ext .ts --ignore-path .eslintignore .",
+    "format": "prettier --ignore-path .eslintignore --write ./",
+    "precommit": "npm run lint",
     "prepare": "husky install"
   },
   "author": {
@@ -31,40 +32,44 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^8.0.0",
     "@types/babel-core": "6.25.7",
     "@types/eslint": "^8.2.0",
-    "@types/eslint-plugin-prettier": "3.1.0",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.11",
-    "@types/prettier": "2.4.2",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.4.2",
     "eslint": "^8.3.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
     "eslint-config-standard": ">=16.0.3",
     "eslint-loader": "^4.0.2",
+    "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": ">=2.25.3",
     "eslint-plugin-jest": ">=25.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": ">=11.1.0",
-    "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-promise": ">=5.1.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-standard": ">=5.0.0",
     "husky": "^7.0.4",
     "jest": "^27.4.2",
+    "lint-staged": "^12.1.2",
     "prettier": "2.5.0",
     "typescript": "^4.5.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "yarn lint",
       "yarn lintfix"
-    ]
+    ],
+    "*.{json,md}": "yarn format"
   }
 }
