@@ -35,4 +35,3 @@ $ yarn run watch
 ## License
 
 MIT © [hisasann](https://github.com/hisasann)
-

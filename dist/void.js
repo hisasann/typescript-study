@@ -1,2 +1,2 @@
-var a = undefined;
-export {};
+var a = undefined
+export {}

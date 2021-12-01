@@ -2,7 +2,7 @@
  * ジェネリックス
  */
 var obj = {
-    foo: 3,
-    bar: 'hi',
-};
-export {};
+  foo: 3,
+  bar: 'hi',
+}
+export {}

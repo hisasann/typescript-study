@@ -1,3 +1,3 @@
-var value = 'foo';
-var str = value;
-export {};
+var value = 'foo'
+var str = value
+export {}

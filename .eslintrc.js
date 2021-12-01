@@ -21,6 +21,11 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    'dot-notation': 'off',
+    'no-console': 'off',
+    'prefer-const': 'off',
+    'no-unused-vars': 'off',
+
     '@typescript-eslint/no-object-literal-type-assertion': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
@@ -30,5 +35,6 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-useless-constructor': 'off',
     '@typescript-eslint/no-unused-expressions': 'off',
+    'import/no-mutable-exports': 'off',
   },
 }

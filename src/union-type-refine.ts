@@ -11,7 +11,7 @@ interface Piyo {
   baz: boolean
 }
 
-function useHogePiyo(obj: Hoge | Piyo): void {
+function hogePiyo(obj: Hoge | Piyo): void {
   // ここではobjはHoge | Piyo型
   if ('bar' in obj) {
     // barプロパティがあるのはHoge型なのでここではobjはHoge型
@@ -22,11 +22,11 @@ function useHogePiyo(obj: Hoge | Piyo): void {
   }
 }
 
-useHogePiyo({
+hogePiyo({
   foo: 'a',
   bar: 1,
 } as Hoge)
-useHogePiyo({
+hogePiyo({
   foo: 1,
   baz: false,
 } as Piyo)

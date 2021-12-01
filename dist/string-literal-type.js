@@ -2,5 +2,5 @@
  * 文字列リテラル型
  */
 // 'foo' という文字列リテラルな型を定義できます
-var foo = 'foo';
-export {};
+var foo = 'foo'
+export {}

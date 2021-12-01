@@ -43,7 +43,7 @@ map(
   } as Some<string>,
   (o): void => {
     console.log(o)
-  }
+  },
 )
 
 // funcの返り値を変数resultに代入していますが、実際にはresultに何かが代入されることはあり得ません

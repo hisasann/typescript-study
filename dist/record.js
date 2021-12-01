@@ -1,10 +1,10 @@
 var a = [
-    {
-        aaa: 1,
-        bbb: 'a',
-    },
-    {
-        aaa: 1,
-    },
-];
-export {};
+  {
+    aaa: 1,
+    bbb: 'a',
+  },
+  {
+    aaa: 1,
+  },
+]
+export {}

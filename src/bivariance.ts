@@ -17,7 +17,7 @@ listenEvent((e: MouseEvent): void => console.log(e.x + ',' + e.y))
 
 // Undesirable alternatives in presence of soundness
 listenEvent((e: Event): void =>
-  console.log((e as MouseEvent).x + ',' + (e as MouseEvent).y)
+  console.log((e as MouseEvent).x + ',' + (e as MouseEvent).y),
 )
 
 listenEvent((e: Event): void => {
