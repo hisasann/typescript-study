@@ -8,8 +8,8 @@
     "build": "cross-env NODE_ENV=production rimraf dist/* && tsc",
     "watch": "cross-env NODE_ENV=development rimraf dist/* && tsc -w",
     "test": "jest",
-    "lint": "eslint --ext .ts --ignore-path .eslintignore .",
-    "lintfix": "eslint --fix --ext .ts --ignore-path .eslintignore .",
+    "lint": "eslint --ext .tsx,.ts,.js,.jsx --ignore-path .eslintignore .",
+    "lintfix": "eslint --fix --ext .tsx,.ts,.js,.jsx --ignore-path .eslintignore .",
     "format": "prettier --ignore-path .eslintignore --write ./",
     "precommit": "npm run lint",
     "prepare": "husky install"
