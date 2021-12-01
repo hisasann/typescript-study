@@ -1,4 +1,5 @@
 **/build/
+**/dist/
 **/tests/__snapshots/
 **/node_modules/
 !.eslintrc.js
